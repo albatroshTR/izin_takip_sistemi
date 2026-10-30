@@ -3,9 +3,7 @@
 Personelin yıllık izin hakkını, kullanımını ve kalan iznini takip eden küçük bir masaüstü programı (Windows; Python + PySide6).
 Hesaplar 4857 sayılı İş Kanunu md.53–60 ve Yıllık Ücretli İzin Yönetmeliği'ne göre yapılır.
 
-> **Durum: deneysel (v0.1.0).** Bir işyerindeki kendi ihtiyaç için, yapay zekâ yardımıyla yazıldı ve düzenlendi; ben (depo sahibi)
-> profesyonel yazılımcı değilim. Hata ve eksik olabilir, bağımsız bir güvenlik ya da hukuk incelemesinden geçmedi. Gerçek personel verisiyle
-> kullanmadan önce sonuçlarınızı mutlaka kendiniz kontrol edin. Geri bildirim, hata bildirimi ve düzeltmeler çok değerli.
+> **Durum: deneysel (v0.1.0).** Hata ve eksik olabilir; gerçek verinizle kullanmadan önce [Geliştirme hakkında](#geliştirme-hakkında) bölümünü okuyun.
 
 Neler yapıyor:
 
@@ -82,6 +80,13 @@ docs/                      kullanım kılavuzu, hesap kuralları, resmî tatille
 Hesaplar yukarıdaki mevzuata göre yapılmaya çalışılır, ancak yanlış olabilir; program hukuki ya da mali müşavirlik hizmeti değildir. İş sözleşmeniz, toplu iş
 sözleşmeniz ve işyeri uygulamanız kanundan farklı (işçi lehine) hükümler içerebilir; kesin sonuçlar için uzmanınıza danışın.
 Resmî tatil listesindeki dinî bayram tarihleri Diyanet takviminden alınmıştır; her yıl başında kontrol edip güncelleyin.
+
+## Geliştirme hakkında
+
+Bu proje yapay zekâ destekli geliştirildi ("vibe coding"; Claude Code ile). Yazılımcı olmayan bir kullanıcının, kendi işyerinde izin takibi
+ihtiyacından doğdu. Hak ediş hesabı birim testleriyle, program ise pencereler üzerinden çalışan uçtan uca testlerle doğrulanıyor
+(yaklaşık 130 otomatik kontrol: `testler/`). Buna rağmen kişisel veri tuttuğu ve izin hesabı hukuki sonuç doğurabildiği için gerçek kullanımdan
+önce kendi verinizle deneyin, sonuçları kontrol edin ve düzenli yedek alın. Kod inceleme, hata bildirimi ve katkılar memnuniyetle karşılanır.
 
 ## Katkı ve lisans
 
