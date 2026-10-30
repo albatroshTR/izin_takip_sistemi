@@ -16,7 +16,7 @@ from .giris import (KullaniciPenceresi, KurtarmaAnahtariPenceresi, ParolaDegisti
                     YedekAnahtariPenceresi)
 from .oturum import KILIT_SECENEK
 from .sayfa import Sayfa
-from .. import REPO, SURUM, TELIF, UYGULAMA_ADI, WEB, guvenlik, yollar
+from .. import SURUM, TELIF, UYGULAMA_ADI, WEB, guvenlik, yollar
 from ..veritabani import ROLLER, VeriHatasi, YedekAnahtariGerekli
 from ..yardimci import tarih_iso
 
@@ -177,13 +177,11 @@ class AyarlarSayfa(Sayfa):
         h.duzen.addWidget(etiket('Yıllık izin hakları 4857 sayılı İş Kanunu md.53–60 ve Yıllık Ücretli İzin Yönetmeliği\'ne göre hesaplanır; '
                                  'kurallar Yardım sayfasında. Program "olduğu gibi" sunulur; kesin hukuki sonuçlar için işyerinizin '
                                  'hukuk / mali müşavirlik desteği esastır.', 'Soluk', True))
-        web = dugme(WEB.split('//')[1], 'web', 'Bag')
-        web.clicked.connect(lambda: QDesktopServices.openUrl(QUrl(WEB)))
         repo = dugme('GitHub', 'web', 'Bag')
-        repo.clicked.connect(lambda: QDesktopServices.openUrl(QUrl(REPO)))
+        repo.clicked.connect(lambda: QDesktopServices.openUrl(QUrl(WEB)))
         lisans = dugme('Lisans bilgileri', 'dosya', 'Bag')
         lisans.clicked.connect(self._lisans)
-        h.duzen.addLayout(_yatay(etiket('Yazar:', 'Soluk'), web, 16, repo, 16, lisans, None))
+        h.duzen.addLayout(_yatay(repo, 16, lisans, None))
         d.addWidget(h)
         d.addStretch(1)
 

@@ -1,5 +1,4 @@
 İZİN TAKİP SİSTEMİ
-Yazar: Tahir Ekinalan · https://tahirekinalan.com
 
 MIT License
 

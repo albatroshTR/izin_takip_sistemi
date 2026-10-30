@@ -43,7 +43,7 @@ def _kutu(ipucu=''):
 
 
 def iletisim_html(renk):
-    return (f'{html.escape(TELIF_KISA)}<br>{html.escape(TELIF)}<br>'
+    return (f'{html.escape(TELIF)}<br>'
             f'<a href="{WEB}" style="color:{renk}; text-decoration:none">{WEB.split("//")[1]}</a>')
 
 

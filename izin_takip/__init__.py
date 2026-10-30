@@ -5,9 +5,8 @@ Hesap kuralları hesapla.py'dedir; veriler parolayla şifrelenmiş dosyada tutul
 """
 UYGULAMA_ADI = 'İzin Takip Sistemi'
 KISA_AD = 'İzin Takip Sistemi'
-SURUM = '2.0.0'
-TELIF_SAHIBI = 'Tahir Ekinalan'
+SURUM = '0.1.0'
+TELIF_SAHIBI = 'İzin Takip Sistemi'
 TELIF = 'MIT Lisansı ile açık kaynaktır.'
-TELIF_KISA = '© 2026 Tahir Ekinalan'
-WEB = 'https://tahirekinalan.com'
-REPO = 'https://github.com/albatroshTR/izin_takip_sistemi'
+TELIF_KISA = 'Açık kaynak · MIT'
+WEB = 'https://github.com/albatroshTR/izin_takip_sistemi'

@@ -1,16 +1,21 @@
 # İzin Takip Sistemi
 
-Personelin **yıllık izin hakkını, kullanımını ve kalan iznini** takip eden, Türk iş hukukuna (4857 sayılı İş Kanunu md.53–60 ve
-Yıllık Ücretli İzin Yönetmeliği) göre hesaplayan **masaüstü programı** (Windows; Python + PySide6).
+Personelin yıllık izin hakkını, kullanımını ve kalan iznini takip eden küçük bir masaüstü programı (Windows; Python + PySide6).
+Hesaplar 4857 sayılı İş Kanunu md.53–60 ve Yıllık Ücretli İzin Yönetmeliği'ne göre yapılır.
 
-- Kim ne kadar izin hak etti, ne kadarını kullandı, ne kadarı kaldı — tek pencerede.
-- İzin girişi (yıllık, rapor, mazeret, ücretsiz, idari), **izin kartı** (yönetmelik md.20), **izin formu**, aylık takvim.
-- Kıdeme (14 / 20 / 26 gün) ve yaşa (18 altı, 50 üstü: en az 20 gün) göre hak edişi kendiliğinden hesaplar; Pazar ve resmî tatilleri,
-  arife yarım günlerini, kesintili çalışmayı, ücretsiz izinle öteleneni, avans (hak edilmeden kullanılan) izni bilir.
-- İşten ayrılanın ödenmemiş izin ücreti (md.59) ve zamanaşımı takibi.
-- Otomatik **kontroller**: avans izin, çalışma dönemi dışı tarih, çakışan kayıt, Pazar / tatile yazılmış izin, eksik bilgi.
-- **Güvenlik:** kullanıcı adı + parola, roller (Yönetici / Kullanıcı), veriler ve yedekler AES-256-GCM ile şifreli, kurtarma anahtarı,
-  hatalı denemede artan bekleme, otomatik kilit, işlem geçmişi.
+> **Durum: deneysel (v0.1.0).** Bir işyerindeki kendi ihtiyaç için, yapay zekâ yardımıyla yazıldı ve düzenlendi; ben (depo sahibi)
+> profesyonel yazılımcı değilim. Hata ve eksik olabilir, bağımsız bir güvenlik ya da hukuk incelemesinden geçmedi. Gerçek personel verisiyle
+> kullanmadan önce sonuçlarınızı mutlaka kendiniz kontrol edin. Geri bildirim, hata bildirimi ve düzeltmeler çok değerli.
+
+Neler yapıyor:
+
+- Kim ne kadar izin hak etti, ne kadarını kullandı, ne kadarı kaldı.
+- İzin girişi (yıllık, rapor, mazeret, ücretsiz, idari), izin kartı, izin formu, aylık takvim.
+- Kıdeme (14 / 20 / 26 gün) ve yaşa (18 altı, 50 üstü: en az 20 gün) göre hak ediş; Pazar ve resmî tatiller, arife yarım günleri,
+  kesintili çalışma, ücretsiz izinle ötelenen hak tarihi, avans (hak edilmeden kullanılan) izin.
+- İşten ayrılanın ödenmemiş izin ücreti (md.59) takibi.
+- Otomatik kontroller: avans izin, çalışma dönemi dışı tarih, çakışan kayıt, Pazar / tatile yazılmış izin, eksik bilgi.
+- Giriş (kullanıcı adı + parola), roller, şifreli veri dosyası ve yedek (AES-256-GCM), kurtarma anahtarı, otomatik kilit.
 - PDF ve Excel çıktıları.
 
 ![Genel Durum](docs/ekran/genel-durum.png)
@@ -74,13 +79,9 @@ docs/                      kullanım kılavuzu, hesap kuralları, resmî tatille
 
 ## Hukuki not
 
-Hesaplar yukarıdaki mevzuata göre yapılır, ancak program hukuki ya da mali müşavirlik hizmeti değildir. İş sözleşmeniz, toplu iş
+Hesaplar yukarıdaki mevzuata göre yapılmaya çalışılır, ancak yanlış olabilir; program hukuki ya da mali müşavirlik hizmeti değildir. İş sözleşmeniz, toplu iş
 sözleşmeniz ve işyeri uygulamanız kanundan farklı (işçi lehine) hükümler içerebilir; kesin sonuçlar için uzmanınıza danışın.
 Resmî tatil listesindeki dinî bayram tarihleri Diyanet takviminden alınmıştır; her yıl başında kontrol edip güncelleyin.
-
-## Yazar
-
-Tahir Ekinalan · [tahirekinalan.com](https://tahirekinalan.com)
 
 ## Katkı ve lisans
 
