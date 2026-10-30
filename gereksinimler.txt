@@ -1,0 +1,6 @@
+# İzin Takip Sistemi — Python paketleri (Python 3.9 – 3.13)
+# PySide6 6.8.1 kullanılmaz: PDF bilgi sözlüğünü bozuk yazıyor (6.9.3'te düzeltilmiş).
+PySide6-Essentials==6.9.3
+openpyxl>=3.0
+# veri dosyasının şifrelenmesi (AES-256-GCM)
+cryptography>=42

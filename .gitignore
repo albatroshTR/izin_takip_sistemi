@@ -1,0 +1,24 @@
+__pycache__/
+*.pyc
+.venv/
+build/
+dist/
+*.spec.bak
+# veri ve çıktılar: kişisel veri depoya girmesin
+*.vt
+*.db
+*.xlsx
+*.xlsm
+personel_takip*
+hata_gunlugu.txt
+giris.json
+.kilit
+çıktılar/
+yedekler/
+gecici/
+deneme-verisi/
+Thumbs.db
+desktop.ini
+~$*
+.~lock.*
+.claude/settings.local.json
